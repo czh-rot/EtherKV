@@ -40,3 +40,4 @@ See /goleveldb/leveldb/cache for more details
 1. WRITE: Using interface() InsertChain() to replay all historail blocks
 2. READ: All tests are located in /MPT/trie/exper_test.go
 ```
+Before running read tests, you must botain all historial transactions hash and all accounts registered
