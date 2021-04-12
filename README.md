@@ -8,7 +8,7 @@ geth --syncmode "full" --cache 1024 --datadir "xxx"
 
 ## Separation storage
 
-We store state data and non-state data in the underlying KV storage respectively, which is implemented by two different interfaces
+We store state data and non-state data in the underlying KV storage respectively, which is implemented by two different interfaces()
 
 ```bash
 db,_ := ethdb.NewLDBDatabase("PATH")
