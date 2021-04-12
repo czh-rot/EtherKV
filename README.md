@@ -17,7 +17,22 @@ db.Put_s(key(state), value(state))
 ```
 ## Prefix MPT
 
+Prefix MPT can aggregate nodes that are strongly spatiotemporal, see /MPT/trie for more details
+
 ## SGC
+
+```bash
+type sgc struct{
+  mu sync.Mutex
+  capacity int
+  trriger int
+  rused, fused, r1used, f1used int
+  recent lruNode
+  frequent lruNode
+  r1, f1 lruNode
+}
+```
+See /goleveldb/leveldb/cache for more details 
 
 ## How to use
 
